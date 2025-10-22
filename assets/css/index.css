@@ -1,0 +1,32 @@
+/* Custom CSS for Bootstrap Components Practice
+   Adds soft gradients, hover states, and accessibility improvements.
+*/
+
+:root {
+  --grad1: rgba(13, 110, 253, 0.1);
+  --grad2: rgba(111, 66, 193, 0.1);
+}
+
+/* Soft background for hero */
+#home {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+/* Focus outlines for accessibility */
+:focus-visible {
+  outline: 3px solid rgba(13, 110, 253, 0.4);
+  outline-offset: 2px;
+}
+
+/* Footer styling */
+footer {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
